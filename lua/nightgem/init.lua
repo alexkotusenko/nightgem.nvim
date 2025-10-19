@@ -12,12 +12,13 @@ function M.setup()
 	local colors = {
 		bg = "#090809", -- charcoal black
 		fg = "#aaaaaa",
-		yellow = "#feb548",
-		pink = "#CE78A6",
+		pink = "#FEC671",
+		yellow = "#CE78A6",
 		red = "#ff6666", -- for errors
 		blue = "#7781ee",
 		light_grey = "#7a7a7a",
 		dark_grey = "#3a3a3a",
+		green = "#65BA7E"
 	}
 
 	-- Define highlight groups
@@ -41,7 +42,7 @@ function M.setup()
 	set(0, "@function", { link = "Function" })
 	set(0, "@function.call", { link = "Function" })
 	set(0, "Comment", { fg = colors.dark_grey })
-	set(0, "Delimiter", { fg = colors.light_grey })
+	set(0, "Delimiter", { fg = colors.green })
 	set(0, "Keyword", { fg = colors.yellow })
 	set(0, "@string", { fg = colors.pink })
 	set(0, "@punctiation", { link = "Delimiter" })
@@ -52,6 +53,7 @@ function M.setup()
 	set(0, "ErrorMsg", { fg = colors.red })
 	set(0, "DiagnosticError", { fg = colors.red })
 	set(0, "MsgArea", { fg = colors.fg })
+	set(0, "Constant", { fg = colors.fg })
 
 end
 
