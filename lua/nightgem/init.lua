@@ -45,6 +45,7 @@ function M.setup()
 	set(0, "Delimiter", { fg = colors.green })
 	set(0, "Keyword", { fg = colors.yellow })
 	set(0, "@string", { fg = colors.pink })
+	set(0, "String", { fg = colors.yellow })
 	set(0, "@punctiation", { link = "Delimiter" })
 	set(0, "@punctuation.bracket", { fg = colors.light_grey }) -- make parentheses and braces red
 	set(0, "ModeMsg", { fg = colors.light_grey })
@@ -54,6 +55,7 @@ function M.setup()
 	set(0, "DiagnosticError", { fg = colors.red })
 	set(0, "MsgArea", { fg = colors.fg })
 	set(0, "Constant", { fg = colors.fg })
+
 
 end
 
