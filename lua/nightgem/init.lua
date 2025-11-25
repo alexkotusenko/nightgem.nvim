@@ -1,7 +1,6 @@
 local M = {}
 
 function M.setup()
-
 	vim.cmd("highlight clear")
 	-- vim.cmd("syntax reset")
 	vim.o.background = "dark"
@@ -18,8 +17,16 @@ function M.setup()
 		blue = "#7781ee",
 		light_grey = "#7a7a7a",
 		dark_grey = "#3a3a3a",
-		green = "#65BA7E"
+		green = "#65BA7E",
+
+		bg_diff_add = "#0c210c",
+		bg_diff_change = "#211d0c",
+		bg_diff_remove = "#210c0c",
 	}
+
+	local diffAdd = { fg = colors.green, bg = colors.bg_diff_add }
+	local diffChange = { fg = colors.pink, bg = colors.bg_diff_change }
+	local diffDelete = { fg = colors.red, bg = colors.bg_diff_remove }
 
 	-- Define highlight groups
 
@@ -44,9 +51,7 @@ function M.setup()
 	set(0, "Comment", { fg = colors.dark_grey })
 	set(0, "Delimiter", { fg = colors.green })
 	set(0, "Keyword", { fg = colors.yellow })
-	set(0, "Identifier", { fg = colors.yellow })
 	set(0, "@string", { fg = colors.pink })
-	set(0, "String", { fg = colors.pink })
 	set(0, "@punctiation", { link = "Delimiter" })
 	set(0, "@punctuation.bracket", { fg = colors.light_grey }) -- make parentheses and braces red
 	set(0, "ModeMsg", { fg = colors.light_grey })
@@ -57,7 +62,29 @@ function M.setup()
 	set(0, "MsgArea", { fg = colors.fg })
 	set(0, "Constant", { fg = colors.fg })
 
+	set(0, "DiffAdd", diffAdd)
+	set(0, "DiffChange", diffChange)
+	set(0, "DiffDelete", diffDelete)
 
+	set(0, "GitSignsAdd", diffAdd)
+	set(0, "GitSignsChange", diffChange)
+	set(0, "GitSignsDelete", diffDelete)
+
+	set(0, "GitSignsAddNr", diffAdd)
+	set(0, "GitSignsChangeNr", diffChange)
+	set(0, "GitSignsDeleteNr", diffDelete)
+
+	set(0, "GitSignsAddLn", { bg = colors.bg_diff_add })
+	set(0, "GitSignsChangeLn", { bg = colors.bg_diff_change })
+	set(0, "GitSignsDeleteLn", { bg = colors.bg_diff_remove })
+
+	set(0, "GitSignsAddInline", diffAdd)
+	set(0, "GitSignsChangeInline", diffChange)
+	set(0, "GitSignsDeleteInline", diffDelete)
+
+	set(0, "GitSignsAddLnInline", diffAdd)
+	set(0, "GitSignsChangeLnInline", diffChange)
+	set(0, "GitSignsDeleteLnInline", diffDelete)
 end
 
 return M
