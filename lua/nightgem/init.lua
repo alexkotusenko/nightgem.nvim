@@ -13,7 +13,7 @@ function M.setup()
 		bg = "#090809", -- charcoal black
 		fg = "#aaaaaa",
 		pink = "#FEC671",
-		yellow = "#CE78A6",
+		yellow = "#BE4B88", -- actually pink
 		red = "#ff6666", -- for errors
 		blue = "#7781ee",
 		light_grey = "#7a7a7a",
