@@ -12,7 +12,7 @@ function M.setup()
 	local colors = {
 		bg = "#090809", -- charcoal black
 		fg = "#aaaaaa",
-		pink = "#FEC671",
+		pink = "#FEB548", -- actually yellow~orange ish
 		yellow = "#BE4B88", -- actually pink
 		red = "#ff6666", -- for errors
 		blue = "#7781ee",
