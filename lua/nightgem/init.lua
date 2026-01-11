@@ -64,7 +64,7 @@ function M.setup()
 	set(0, "@string", { fg = colors.pink })
 	set(0, "String", { fg = colors.pink })
 	set(0, "@punctiation", { link = "Delimiter" })
-	set(0, "@punctuation.bracket", { fg = colors.light_grey }) -- make parentheses and braces red
+	set(0, "@punctuation.bracket", { fg = colors.pink }) -- make parentheses and braces red
 	set(0, "ModeMsg", { fg = colors.light_grey })
 	set(0, "StatusLine", { fg = colors.light_grey, bg = colors.bg })
 	set(0, "Pmenu", { link = "StatusLine" })
