@@ -26,12 +26,15 @@ function M.setup()
 		bg = "#090809", -- charcoal black
 		fg = "#aaaaaa",
 		pink = "#FEBE5D", -- actually yellow~orange ish
-		yellow = "#BE4B88", -- actually pink
+		yellow = "#B6577B", -- actually pink
 		red = "#ff6666", -- for errors
 		blue = "#7781ee",
 		light_grey = "#7a7a7a",
 		dark_grey = "#3a3a3a",
-		green = "#65BA7E"
+		-- green = "#4A947D"
+		-- green = "#3D7966",
+		-- green = "#FF4848", -- this one is strawberry red
+		green = "#398349",
 	}
 	
 	-- set colorscheme variant
@@ -64,7 +67,7 @@ function M.setup()
 	set(0, "@string", { fg = colors.pink })
 	set(0, "String", { fg = colors.pink })
 	set(0, "@punctiation", { link = "Delimiter" })
-	set(0, "@punctuation.bracket", { fg = colors.pink }) -- make parentheses and braces red
+	set(0, "@punctuation.bracket", { fg = colors.blue }) -- make parentheses and braces red
 	set(0, "ModeMsg", { fg = colors.light_grey })
 	set(0, "StatusLine", { fg = colors.light_grey, bg = colors.bg })
 	set(0, "Pmenu", { link = "StatusLine" })
