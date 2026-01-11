@@ -9,7 +9,8 @@ function M.setup()
 
 	local set = vim.api.nvim_set_hl
 
-	local colors = {
+	-- colorscheme variants
+	local saturated_colors = {
 		bg = "#090809", -- charcoal black
 		fg = "#aaaaaa",
 		pink = "#FEBE5D", -- actually yellow~orange ish
@@ -20,6 +21,9 @@ function M.setup()
 		dark_grey = "#3a3a3a",
 		green = "#65BA7E"
 	}
+	
+	-- set colorscheme variant
+	local colors = saturated_colors
 
 	-- Define highlight groups
 
