@@ -59,7 +59,7 @@ function M.setup()
 
 	-- tab bar above
 	set(0, "StatusLineNC", { bg = colors.bg, fg = colors.dark_grey })
-	set(0, "TabLine", { bg = colors.bgm fg = colors.dark_grey })
+	set(0, "TabLine", { bg = colors.bg, fg = colors.dark_grey })
 
 
 end
