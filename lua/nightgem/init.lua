@@ -57,6 +57,10 @@ function M.setup()
 	set(0, "MsgArea", { fg = colors.fg })
 	set(0, "Constant", { fg = colors.fg })
 
+	-- tab bar above
+	set(0, "StatusLineNC", { bg = colors.bg, fg = colors.dark_grey })
+	set(0, "TabLine", { bg = colors.bgm fg = colors.dark_grey })
+
 
 end
 
