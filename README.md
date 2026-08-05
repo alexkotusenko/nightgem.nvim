@@ -26,8 +26,8 @@ A dark, minimalist colorscheme for Neovim with a carefully selected palette of c
 
 - Background: Charcoal Black (`#090809`)
 - Foreground: Soft Grey (`#aaaaaa`)
-- Yellow: Muted Purple (`#CE78A6`)
-- Pink: Warm Gold (`#FEC671`)
+- Yellow: Warm Gold (`#FEC671`)
+- Pink: Muted Purple (`#CE78A6`)
 - Blue: Pastel Blue (`#7781ee`)
 - Green: Soft Mint (`#65BA7E`)
 - Red: Error Red (`#ff6666`)
